@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "a51005ad-0fbf-4e02-b546-f23b4cad20fa",
+		"name": "sports-betting",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12206232"
+	},
+	"item": [
+		{
+			"name": "get rates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/rates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"rates"
+					],
+					"query": [
+						{
+							"key": "brand",
+							"value": "bmwww",
+							"disabled": true
+						},
+						{
+							"key": "brand",
+							"value": "Honda",
+							"disabled": true
+						},
+						{
+							"key": "brand",
+							"value": "Ferrari",
+							"disabled": true
+						},
+						{
+							"key": "brand",
+							"value": "Audi",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "accepts bets",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"brand\": \"Audi\",\n    \"amount\": \"42.00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/rates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"rates"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
